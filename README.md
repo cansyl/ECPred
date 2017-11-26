@@ -2,34 +2,34 @@
 
 ## Dependencies
 
-Java 8 
+Java 8 <br />
 gcc/g++ (any version)
 
 ## Download
 
-ECPred.jar
+ECPred.jar <br />
 
-and
+and <br />
 
-ECPred_training_data.tar.gz
+ECPred_training_data.tar.gz <br />
 
-Training data should be downloaded from:
+Training data should be downloaded from: <br />
 
 ..................
 
 ## Installation
 
-Run runLinux.sh or runMac.sh (while inside lib folder) from terminal using one of the following commands:
+Run runLinux.sh or runMac.sh (while inside lib folder) from terminal using one of the following commands: <br />
 
-./runLinux.sh
-or
-./runMac.sh
+./runLinux.sh <br />
+or <br />
+./runMac.sh <br />
 
 These bash scripts will install necessary libraries and tools.
 
 ## Usage
 
-(ECPred.jar and lib folder should be at same directory)
+(ECPred.jar and lib folder should be at same directory) <br />
 
 Run java -jar ECPred.jar input.fasta
 
@@ -43,12 +43,12 @@ ECPRed.jar outputs a tsv file predictionResults_inputFile_DateandTime.tsv which 
 
 ## Data files
 
-"Independent_test_results_1030_proteins.tsv": A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (1030 sequences).
+"Independent_test_results_1030_proteins.tsv": A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (1030 sequences). <br />
 
-"Independent_test_results_60_proteins.tsv": A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (60 sequences).
+"Independent_test_results_60_proteins.tsv": A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (60 sequences). <br />
 
-"ECNumberList.txt": A text file containing the list of EC numbers that ECPred can predict.
+"ECNumberList.txt": A text file containing the list of EC numbers that ECPred can predict. <br />
 
-"test.fasta": An example input fasta file.
+"test.fasta": An example input fasta file. <br />
 
 "predictionResults_test_DateandTime.tsv": An example output prediction file (for test.fasta).
