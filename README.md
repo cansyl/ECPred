@@ -1,7 +1,7 @@
 # ECPred Version 1.0 26/11/2017
 
 ## Dependencies
-Java 8
+Java 8 <br />
 Any version of gcc/g++
 
 ## Installation
