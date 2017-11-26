@@ -1,4 +1,4 @@
-# ECPred Version 1.0 26/11/2017
+## ECPred Version 1.0 26/11/2017
 
 ## Dependencies
 Java 8 <br />
