@@ -43,7 +43,7 @@ ECPred accepts one input fasta file which may contain up to 20 proteins.
 
 ## Output
 
-"predictionResults_InputFileName_Date-Time.tsv": <br />
+"predictionResults_filename_Date-Time.tsv": <br />
 
 A tsv file that contains the main, subfamily, sub-subfamily and substrate class predictions together with confidence scores for each prediction; alternatively, the output can be “non-enzyme” or “no prediction”.
 
