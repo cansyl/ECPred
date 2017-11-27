@@ -1,10 +1,12 @@
 ## ECPred Version 1.0 (01.12.2017)
 
 ## Dependencies
-
-Java 8 <br />
+```
+Java 8 
+```
+```
 gcc/g++ (any version)
-
+```
 ## Download
 ```
 ECPred.tar.gz
