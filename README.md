@@ -20,8 +20,9 @@ Training data should be downloaded from: <br />
 ## Installation
 
 Run runLinux.sh or runMac.sh (while inside lib folder) from terminal using one of the following commands: <br />
-
+```
 ./runLinux.sh <br />
+```
 or <br />
 ./runMac.sh <br />
 
