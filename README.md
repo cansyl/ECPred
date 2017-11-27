@@ -6,50 +6,64 @@ Java 8 <br />
 gcc/g++ (any version)
 
 ## Download
-
-ECPred.jar <br />
-
-and <br />
-
-ECPred_training_data.tar.gz <br />
-
-Training data should be downloaded from: <br />
+```
+ECPred.tar.gz
+```
+Above file (around 3 GB) should be downloaded from:
 
 ..................
 
 ## Installation
 
-Run runLinux.sh or runMac.sh (while inside lib folder) from terminal using one of the following commands: <br />
+Extract the files using: <br />
+```
+tar -xvf ECPred.tar.gz  
+```
+After extraction the total size of the folder will be around 10 GB. <br />
+
+Run runLinux.sh or runMac.sh from terminal according to your OS using one of these commands: <br />
 ```
 ./runLinux.sh 
 ```
 or <br />
-./runMac.sh <br />
-
+```
+./runMac.sh
+```
 These bash scripts will install necessary libraries and tools.
 
 ## Usage
 
-(ECPred.jar and lib folder should be at same directory) <br />
-
-Run java -jar ECPred.jar input.fasta
-
+Run the following command on terminal to analyze the file "filename.fasta"  <br />
+```
+java -jar ECPred.jar input.fasta
+```
 ## Input
 
 ECPred accepts one input fasta file which may contain up to 20 proteins.
 
 ## Output
 
-ECPRed.jar outputs a tsv file predictionResults_inputFile_Date-Time.tsv which contains the main, subfamily, sub-subfamily and substrate class predictions together with confidence scores for each prediction; alternatively, the output can be “non-enzyme” or “no prediction” for each query protein, when there is no EC number prediction.
+"predictionResults_InputFileName_Date-Time.tsv": <br />
+
+A tsv file that contains the main, subfamily, sub-subfamily and substrate class predictions together with confidence scores for each prediction; alternatively, the output can be “non-enzyme” or “no prediction”.
 
 ## Data files
 
-"Independent_test_results_1030_proteins.tsv": A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (1030 sequences). <br />
+"Independent_test_results_1030_proteins.tsv":
 
-"Independent_test_results_60_proteins.tsv": A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (60 sequences). <br />
+A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (1030 sequences).
 
-"ECNumberList.txt": A text file containing the list of EC numbers that ECPred can predict. <br />
+"Independent_test_results_60_proteins.tsv": <br />
+A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (60 sequences).  <br />
 
-"test.fasta": An example input fasta file. <br />
+"ECNumberList.txt":  <br />
 
-"predictionResults_test_20171127-012847.tsv": An example output prediction file (for test.fasta).
+A text file containing the list of EC numbers that ECPred can predict.  <br />
+
+"test.fasta":  <br />
+
+An example input fasta file.  <br />
+
+"predictionResults_test_20171127-012847.tsv":  <br />
+
+An example output prediction file (for test.fasta).
