@@ -4,7 +4,7 @@
 ```
 Java 8 
 ```
-For ubuntu, run following commands from terminal:
+For ubuntu, you can install latest version of Java by running following commands from terminal:
 ```
 sudo apt-get update
 sudo apt-get install default-jre
