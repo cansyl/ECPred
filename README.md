@@ -13,7 +13,7 @@ ECPred.tar.gz
 ```
 Above file (around 3 GB) should be downloaded from:
 
-..................
+https://goo.gl/kVBMTk
 
 ## Installation
 
