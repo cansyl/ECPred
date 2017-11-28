@@ -4,8 +4,21 @@
 ```
 Java 8 
 ```
+For ubuntu, run following commands from terminal:
 ```
-gcc/g++ (any version)
+sudo apt-get update
+sudo apt-get install default-jre
+sudo apt-get install default-jdk
+```
+```
+g++ (any version)
+```
+For ubuntu, you can install latest version of g++ by running following commands from terminal
+```
+```
+sudo apt-get update
+sudo apt-get install build-essential
+```
 ```
 ## Download
 ```
