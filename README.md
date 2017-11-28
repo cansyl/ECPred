@@ -37,7 +37,7 @@ These bash scripts will install necessary libraries and tools.
 
 Run the following command on terminal to analyze the file "filename.fasta"  <br />
 ```
-java -jar ECPred.jar input.fasta
+java -jar ECPred.jar filename.fasta
 ```
 ## Input
 
