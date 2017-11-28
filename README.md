@@ -66,6 +66,6 @@ A text file containing the list of EC numbers that ECPred can predict.  <br />
 
 An example input fasta file.  <br />
 
-"predictionResults_test_20171127-012847.tsv":  <br />
+"predictionResults_input_20171128-172728.tsv":  <br />
 
 An example output prediction file (for test.fasta).
