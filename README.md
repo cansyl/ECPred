@@ -31,7 +31,7 @@ ECPred.tar.gz
 ```
 Above file (around 3 GB) should be downloaded from:
 
-https://goo.gl/FxT2BE
+http://cansyl.metu.edu.tr/ECPred.html
 
 ## Installation
 
