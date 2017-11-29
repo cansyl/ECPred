@@ -30,8 +30,8 @@ Type g++ on terminal.
 ECPred.tar.gz
 ```
 Above file (around 3 GB) should be downloaded from:
-https://goo.gl/cwSvrr
-https://goo.gl/kVBMTk
+
+https://goo.gl/FxT2BE
 
 ## Installation
 
