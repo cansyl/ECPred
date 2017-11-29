@@ -30,7 +30,7 @@ Type g++ on terminal.
 ECPred.tar.gz
 ```
 Above file (around 3 GB) should be downloaded from:
-
+https://www.dropbox.com/s/z81jpbxjnakceki/ProbSampleQuestions.pdf?dl=1
 https://goo.gl/kVBMTk
 
 ## Installation
