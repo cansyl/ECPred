@@ -1,9 +1,9 @@
 ## ECPred Version 1.0 (01.12.2017)
 
 ## Dependencies
-```
-Java 8 
-```
+
+Java 8  <br />
+
 For Linux, you can install latest version of Java by running following commands from terminal:
 ```
 sudo apt-get update
@@ -15,9 +15,9 @@ For Mac, you can install latest version of Java by running following commands fr
 brew update
 brew cask install java
 ```
-```
-g++ (any version)
-```
+
+g++ (any version)  <br />
+
 For Linux, you can install latest version of g++ by running following commands from terminal
 ```
 sudo apt-get update
