@@ -35,6 +35,7 @@ For Mac, you can install g++ by running following command from terminal. <br />
 ECPred.tar.gz
 ```
 Above file (around 3 GB) should be downloaded from:
+<a href="http://example.com/" target="_blank">example</a>
 
 <a href="http://cansyl.metu.edu.tr/ECPred.html" target="_blank">example</a>
 
