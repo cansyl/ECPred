@@ -25,7 +25,9 @@ sudo apt-get install build-essential
 ```
 For Mac, you can install g++ by running following command from terminal. <br />
 
- ``` g++ ```
+ ```
+ g++
+ ```
  If you've already installed g++, the terminal prints this message, "no input files". <br />
 
 ## Download
