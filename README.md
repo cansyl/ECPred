@@ -69,13 +69,6 @@ A tsv file that contains the main, subfamily, sub-subfamily and substrate class 
 
 ## Data files
 
-"Independent_test_results_1030_proteins.tsv":
-
-A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (1030 sequences).
-
-"Independent_test_results_60_proteins.tsv": <br />
-A tab delimited file containing uniProtIDs, true EC Number classes and ECPred predictions for the selected independent test set proteins (60 sequences).  <br />
-
 "ECNumberList.txt":  <br />
 
 A text file containing the list of EC numbers that ECPred can predict.  <br />
