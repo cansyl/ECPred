@@ -23,9 +23,10 @@ For Linux, you can install latest version of g++ by running following commands f
 sudo apt-get update
 sudo apt-get install build-essential
 ```
-For Mac, you can install g++ by running following command from terminal. If you've already installed g++  terminal prints this message, "no input files". <br />
+For Mac, you can install g++ by running following command from terminal. <br />
 
  ``` g++ ```
+ If you've already installed g++, the terminal prints this message, "no input files". <br />
 
 ## Download
 ```
