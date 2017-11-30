@@ -23,8 +23,10 @@ For Linux, you can install latest version of g++ by running following commands f
 sudo apt-get update
 sudo apt-get install build-essential
 ```
-For Mac, you can install latest version of g++ by running following commands from terminal
+For Mac, you can install latest version of g++ by running following commands from terminal  <br />
+
 Type g++ on terminal.
+
 ## Download
 ```
 ECPred.tar.gz
