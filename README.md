@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-Java 8  <br />
+### Java 8  
 
 For Linux, you can install latest version of Java by running following commands from terminal:
 ```
@@ -16,7 +16,7 @@ brew update
 brew cask install java
 ```
 
-g++ (any version)  <br />
+### g++ (any version)  
 
 For Linux, you can install latest version of g++ by running following commands from terminal
 ```
