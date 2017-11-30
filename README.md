@@ -25,7 +25,7 @@ sudo apt-get install build-essential
 ```
 For Mac, you can install latest version of g++ by running following commands from terminal  <br />
 
-Type g++ on terminal.
+Type ``` g++ ``` on terminal.
 
 ## Download
 ```
