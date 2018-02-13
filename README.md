@@ -86,8 +86,9 @@ An example input fasta file.  <br />
 
 An example output prediction file (for test.fasta).
 
-## Licence
-ECPred: a tool for the prediction of enzymatic properties of protein sequences based on the EC Nomenclature Copyright (C) 2018 CanSyL
+## License
+ECPred: a tool for the prediction of enzymatic properties of protein sequences based on the EC Nomenclature
+    Copyright (C) 2018 CanSyL
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
