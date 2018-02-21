@@ -1,4 +1,4 @@
-## ECPred Version 1.0 (01.12.2017)
+## ECPred Version 1.0
 
 ## Dependencies
 
