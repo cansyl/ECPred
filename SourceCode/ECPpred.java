@@ -18,6 +18,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.ObjectInputStream.GetField;
 import java.nio.file.Files;
@@ -44,20 +45,12 @@ public class ECPpred {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		Date d1 = new Date();
 		long time = d1.getTime();
-		
+
 		Vector<String> ecnums = new Vector<>() ;
 		ecnums.add("1.-.-.-");ecnums.add("2.-.-.-");ecnums.add("3.-.-.-");
 		ecnums.add("4.-.-.-");ecnums.add("5.-.-.-");ecnums.add("6.-.-.-");
 		String ROOTPATH = "lib/EC";
 		runEC runECobj = new runEC();
-		if(args.length<1){
-			System.out.println("Please give a fasta file as an input!");
-			System.exit(0);
-		}
-		else if(args.length>1){
-			System.out.println("Please give only a fasta file as an input!");
-			System.exit(0);
-		}	
 		StringTokenizer st1;
 		String fastaFile = args[0];
 		String file_namepart1 = "",file_name;
@@ -86,6 +79,7 @@ public class ECPpred {
 		HashMap<String, Vector<Vector<String>>> predictions = new HashMap<>();
 		System.out.println("Main classes of input proteins are being predicted ...");
 		extractFastaandFilter ext = new extractFastaandFilter();
+		
 		createFasta(idlist, fastaFile, "test.fasta", ROOTPATH+File.separator+ "testResult/" + time);
 		String newfasta =  ROOTPATH+File.separator+ "testResult/" + time + File.separator + "test.fasta"; 
 		predictions = runECobj.predictions(args, ROOTPATH, ecnums, time,predictions, idlist, newfasta);
@@ -98,7 +92,7 @@ public class ECPpred {
     	    	  System.out.println("Subclasses of "+protID.get(entry.getKey()).substring(1,protID.get(entry.getKey()).length()) + " are being predicted ...");
 
 	    	  for(int i = 1 ; i<4; i++){
-		        		List<String> ecList = Files.readAllLines(Paths.get("lib/subclasses/"+ entry.getValue().get(i-1).get(0) + ".txt"));
+		        		List<String> ecList = Files.readAllLines(Paths.get(ROOTPATH.substring(0, ROOTPATH.length()-3)+"/subclasses/"+ entry.getValue().get(i-1).get(0) + ".txt"));
 		        		if(ecList.size()==0){
 		        			Vector<String> preds = new Vector<>();
 		        			preds.add("nop");
@@ -121,9 +115,9 @@ public class ECPpred {
 		        }
 	    	 }
 			PrintWriter predFile = new PrintWriter("predictionResults_"+file_name+"_"+ dateandtime+".tsv", "UTF-8");
-			predFile.println("Protein ID\tMain Class\tConfidence Score(max 1.0)\tSubfamily Class\tConfidence Score(max 1.0)\tSub-subfamily Class\tConfidence Score(max 1.0)\t"
-					+ "Substrate Class\tConfidence Score(max 1.0)");
+			predFile.println("Protein ID\tEC Number\tConfidence Score(max 1.0)");
 			idlist = createFasta(fastaFile);
+			boolean flag = false;
 		      for (int a = 0 ; a < idlist.size(); a++ ) {
 		    	  for (Map.Entry<String, Vector<Vector<String>>> entry : predictions.entrySet()) {
 		    		  if(idlist.get(a).equals(entry.getKey())==false)
@@ -133,30 +127,37 @@ public class ECPpred {
 		    		  else
 		    			  predFile.print(protID.get(entry.getKey()).substring(1,protID.get(entry.getKey()).length()));
 			    	  if(entry.getValue().get(0).get(0).equals("non")){
-				    	  predFile.println("\tnon Enzyme\t\t\t\t\t\t\t");
+				    	  predFile.println("\tnon Enzyme");
 				    	  continue;
 			    	  }
 			    	  if(entry.getValue().get(0).get(0).equals("nop")){
-				    	  predFile.println("\tno Prediction\t\t\t\t\t\t\t");
+				    	  predFile.println("\tno Prediction");
 				    	  continue;
 			    	  }
 			    	  for(int i=0; i<4; i++){
 			    		  if(entry.getValue().get(i).get(0).equals("nop")){
-			    			  for(int j=i; j<4; j++){
-				    			  predFile.print("\t\t");
-			    			  }
+			    			  predFile.print("\t"+entry.getValue().get(i-1).get(0)+"\t"+entry.getValue().get(i-1).get(1));
+			    			  flag = true;
 					    	  break;
 			    		  }
-				    	  predFile.print("\t"+entry.getValue().get(i).get(0)+"\t"+entry.getValue().get(i).get(1));
+			    		  else
+			    			  continue;
+				    	 
 				    	  
 			    	  }
+			    	  if(flag == false)
+			    		  predFile.print("\t"+entry.getValue().get(3).get(0)+"\t"+entry.getValue().get(3).get(1));
+  
 			    	  predFile.println();
 						
 						}
+		    	  flag = false;
 		      }	    
 	      predFile.close();
-	     File deletefile = new File(ROOTPATH+File.separator+"testResult");
+	     File deletefile = new File(ROOTPATH+File.separator+"testResult"+File.separator+time);
 		 deleteDirectory(deletefile);
+		
+		 
 			   Date d2 = new Date();
 				long diff = d2.getTime() - d1.getTime();
 				long diffSeconds = diff / 1000 % 60;
