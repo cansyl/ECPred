@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P00437
 Q9VQD2
 Q9T0N8
