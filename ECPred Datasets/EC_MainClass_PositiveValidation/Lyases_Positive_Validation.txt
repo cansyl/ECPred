@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q43714
 Q8KHE4
 P73667
