@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P50870
 Q59W62
 Q21LT1
