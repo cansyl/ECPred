@@ -1,4 +1,4 @@
-Protein	EC Number
+Protein UniProt Acc.	EC Number
 E2JA32	6.3.2.46
 Q89VT8	6.2.1.n2
 A5PK51	6.3.4.21
