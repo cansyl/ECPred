@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 A4YGR1
 Q8RSY1
 A9JTG5
