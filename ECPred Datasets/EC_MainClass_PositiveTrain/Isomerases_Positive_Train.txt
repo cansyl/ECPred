@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q7N8D1
 Q494D7
 Q7P0F0
