@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P21159
 A1KZ92
 P24465
