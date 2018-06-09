@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q7VRM4
 A4XK06
 Q8KCJ4
