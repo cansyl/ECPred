@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P43168
 P94132
 O66256
