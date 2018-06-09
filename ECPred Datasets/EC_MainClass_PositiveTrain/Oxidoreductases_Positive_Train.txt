@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P74132
 Q89XH1
 Q46UA4
