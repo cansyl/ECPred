@@ -1,4 +1,4 @@
-Protein	EC Number
+Protein UniProt Acc.	EC Number
 P73599	5.3.-.-
 P76044	5.-.-.-
 Q46890	4.-.-.-
