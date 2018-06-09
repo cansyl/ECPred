@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P04034
 P70758
 E9RCR4
