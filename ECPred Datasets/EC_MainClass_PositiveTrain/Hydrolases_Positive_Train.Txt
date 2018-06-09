@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P0C0V9
 P15776
 P07975
