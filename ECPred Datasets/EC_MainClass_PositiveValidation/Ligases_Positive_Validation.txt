@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 B9KZR0
 Q54L40
 A0L7K9
