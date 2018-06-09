@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q82Z75
 Q6TEM9
 P16481
