@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q8EB91
 Q9Y2R2
 Q4P9E5
