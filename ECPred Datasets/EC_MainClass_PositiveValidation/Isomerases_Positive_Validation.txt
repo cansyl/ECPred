@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 O05668
 O67098
 Q8Y8D3
