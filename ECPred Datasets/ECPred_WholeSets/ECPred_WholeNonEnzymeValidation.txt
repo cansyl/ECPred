@@ -1,4 +1,4 @@
-Protein	EC number
+Protein UniProt Acc.	EC Number
 P32773	non Enzyme
 Q2XPP5	non Enzyme
 P33204	non Enzyme
