@@ -1,4 +1,4 @@
-Protein	EC Number
+PDB id	EC Number
 10gsA	2.5.1.18
 148lE	3.2.1.17
 1a26A	2.4.2.30
