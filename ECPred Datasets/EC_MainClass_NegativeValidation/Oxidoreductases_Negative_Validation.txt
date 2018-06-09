@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q9PK79
 A6TS61
 Q87VY6
