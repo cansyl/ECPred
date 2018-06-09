@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 F7ZDR3
 Q7G192
 Q9SYG7
