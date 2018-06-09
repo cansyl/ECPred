@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q9GV45
 Q9FI39
 P16099
