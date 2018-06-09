@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 P87214
 O04921
 O67083
