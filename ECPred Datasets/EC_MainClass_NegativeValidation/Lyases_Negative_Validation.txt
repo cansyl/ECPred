@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q7M827
 Q4F8I0
 O28440
