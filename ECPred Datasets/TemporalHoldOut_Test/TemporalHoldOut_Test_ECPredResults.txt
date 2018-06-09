@@ -1,0 +1,61 @@
+Protein	EC Number
+P73599	5.3.-.-
+P76044	5.-.-.-
+Q46890	4.-.-.-
+P39384	4.-.-.-
+O27262	3.5.1.98
+P36921	3.1.26.-
+Q8BUH7	2.3.2.-
+Q96PB1	2.3.1.-
+Q55629	1.5.3.-
+P33642	1.4.99.-
+Q5HQ05	3.-.-.-
+Q7TN73	non Enzyme
+Q09272	3.-.-.-
+O28499	3.5.4.-
+O31775	4.-.-.-
+B9DJR3	3.5.-.-
+B2A1I5	4.-.-.-
+P03813	5.-.-.-
+Q8X840	4.-.-.-
+Q4L5N8	3.-.-.-
+Q9CCE3	3.1.-.-
+Q8CSX5	4.-.-.-
+Q46889	4.3.-.-
+P44093	4.-.-.-
+P9WLJ1	2.-.-.-
+P47488	2.1.1.-
+B1LSM6	5.-.-.-
+C1B762	3.-.-.-
+Q83JB2	4.-.-.-
+P45541	4.-.-.-
+Q9H160	non Enzyme
+Q12947	non Enzyme
+O00585	non Enzyme
+P46527	non Enzyme
+P17676	non Enzyme
+Q08379	non Enzyme
+Q4V328	non Enzyme
+P50552	non Enzyme
+Q8NEH6	non Enzyme
+P09016	non Enzyme
+Q96BR5	3.-.-.-
+Q8WXC6	3.-.-.-
+Q96BW1	2.-.-.-
+Q9H9G7	3.1.-.-
+Q6UWU4	2.-.-.-
+O60306	3.6.4.-
+Q96BH3	3.4.-.-
+Q9BTV4	2.-.-.-
+Q9H974	2.-.-.-
+Q8WWQ2	3.-.-.-
+O15226	non Enzyme
+Q9BU61	non Enzyme
+P26992	non Enzyme
+P48544	non Enzyme
+P20674	no Prediction
+P41091	non Enzyme
+O15265	non Enzyme
+Q92496	3.-.-.-
+Q6PKC3	no Prediction
+P56715	no Prediction

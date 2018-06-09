@@ -1,0 +1,89 @@
+Protein	EC Number
+E2JA32	6.-.-.-
+Q89VT8	6.-.-.-
+A5PK51	6.3.4.21
+Q5P5G6	2.-.-.-
+Q6FSU2	non Enzyme
+P53260	no Prediction
+Q8C0P7	non Enzyme
+Q6CDJ8	non Enzyme
+A5DGY1	non Enzyme
+O52216	non Enzyme
+Q6L227	5.4.99.-
+P42738	non Enzyme
+Q2UDJ8	4.2.2.-
+J9QS25	4.2.3.-
+P0DN21	4.4.-.-
+Q5AR23	no Prediction
+R1ERP2	4.4.1.-
+P84193	1.13.11.-
+G4V4T5	5.-.-.-
+Q556Y7	3.2.1.17
+Q6BKG0	3.6.1.-
+P54997	6.-.-.-
+Q9M658	3.6.4.-
+Q0VPK3	3.1.3.77
+Q8S8N6	3.1.1.4
+P00643	6.-.-.-
+P29537	2.-.-.-
+P40481	2.-.-.-
+Q5ZR76	2.7.7.-
+Q9PQW5	2.7.1.-
+Q03305	2.1.1.-
+A5DXC3	2.1.-.-
+Q05071	3.-.-.-
+Q54QA6	2.1.1.72
+Q9ENL4	non Enzyme
+E7LXI9	2.1.1.-
+Q9STX2	1.-.-.-
+P46364	1.-.-.-
+P0CF87	1.-.-.-
+Q5ATH1	1.-.-.-
+Q4V328	non Enzyme
+Q96JN2	non Enzyme
+O00461	non Enzyme
+Q9Y5U5	non Enzyme
+Q6ZN18	non Enzyme
+Q6P2H3	non Enzyme
+P35658	non Enzyme
+Q9UBF1	non Enzyme
+P18627	non Enzyme
+Q6L8H4	non Enzyme
+P78395	non Enzyme
+P57679	non Enzyme
+P14784	non Enzyme
+Q8IVF2	non Enzyme
+Q6UW56	non Enzyme
+Q9Y2F5	non Enzyme
+Q9ULW3	non Enzyme
+Q9UFW8	non Enzyme
+Q9GZS0	non Enzyme
+Q9Y6X0	non Enzyme
+Q8NA72	non Enzyme
+Q4G163	non Enzyme
+Q8TCG1	non Enzyme
+Q1MSJ5	non Enzyme
+Q9NNX1	non Enzyme
+Q76N32	non Enzyme
+Q9HBB8	non Enzyme
+Q9NRI5	non Enzyme
+Q9NZH7	non Enzyme
+Q6E0U4	non Enzyme
+Q9BXM0	non Enzyme
+Q7RTW8	non Enzyme
+P15516	non Enzyme
+Q96AH0	non Enzyme
+Q9NQG7	non Enzyme
+Q9GZZ8	non Enzyme
+Q6X4W1	non Enzyme
+Q9H5V8	non Enzyme
+Q92902	non Enzyme
+Q9NVH2	non Enzyme
+Q641Q3	non Enzyme
+Q8NEV9	non Enzyme
+Q9Y5T4	no Prediction
+Q86TS9	no Prediction
+Q9UJX0	1.-.-.-
+Q6ZPB5	2.-.-.-
+P49901	3.-.-.-
+Q6UWU4	2.-.-.-
