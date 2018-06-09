@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 O42896
 P19729
 Q9ZDL2
