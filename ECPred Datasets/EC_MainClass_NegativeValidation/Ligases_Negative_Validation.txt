@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 N4WE73
 Q9WX15
 P33006
