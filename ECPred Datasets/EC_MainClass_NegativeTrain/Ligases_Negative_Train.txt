@@ -1,3 +1,4 @@
+Protein UniProt Acc.
 Q9P429
 O34354
 Q8R844
