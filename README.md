@@ -78,13 +78,13 @@ A tsv file that contains the main, subfamily, sub-subfamily and substrate class 
 
 A text file containing the list of EC numbers that ECPred can predict.  <br />
 
-"input.fasta":  <br />
+"sample.fasta":  <br />
 
 An example input fasta file.  <br />
 
-"predictionResults_input_20171128-172728.tsv":  <br />
+"predictionResults_sample_20180503-184512.tsv":  <br />
 
-An example output prediction file (for input.fasta).
+An example output prediction file (for sample.fasta).
 
 ## License
 ECPred: a tool for the prediction of enzymatic properties of protein sequences based on the EC Nomenclature
