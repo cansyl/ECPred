@@ -1,0 +1,61 @@
+Protein UniProt Acc.	EC Number
+P73599	5.3.1.5
+P76044	5.3.1.5
+Q46890	4.1.2.-
+P39384	non Enzyme
+O27262	non Enzyme
+P36921	non Enzyme
+Q8BUH7	non Enzyme
+Q96PB1	non Enzyme
+Q55629	non Enzyme
+P33642	1.4.99.1
+Q5HQ05	non Enzyme
+Q7TN73	non Enzyme
+Q09272	non Enzyme
+O28499	3.5.2.-
+O31775	non Enzyme
+B9DJR3	non Enzyme
+B2A1I5	non Enzyme
+P03813	5.1.1.3
+Q8X840	5.3.1.5
+Q4L5N8	non Enzyme
+Q9CCE3	non Enzyme
+Q8CSX5	non Enzyme
+Q46889	non Enzyme
+P44093	non Enzyme
+P9WLJ1	non Enzyme
+P47488	non Enzyme
+B1LSM6	non Enzyme
+C1B762	non Enzyme
+Q83JB2	5.3.1.5
+P45541	5.3.1.5
+Q9H160	non Enzyme
+Q12947	non Enzyme
+O00585	non Enzyme
+P46527	non Enzyme
+P17676	non Enzyme
+Q08379	non Enzyme
+Q4V328	non Enzyme
+P50552	non Enzyme
+Q8NEH6	non Enzyme
+P09016	non Enzyme
+Q96BR5	3.5.2.6
+Q8WXC6	non Enzyme
+Q96BW1	2.4.2.9
+Q9H9G7	non Enzyme
+Q6UWU4	non Enzyme
+O60306	2.5.1.-
+Q96BH3	non Enzyme
+Q9BTV4	non Enzyme
+Q9H974	2.4.2.29
+Q8WWQ2	non Enzyme
+O15226	non Enzyme
+Q9BU61	non Enzyme
+P26992	non Enzyme
+P48544	non Enzyme
+P20674	non Enzyme
+P41091	non Enzyme
+O15265	non Enzyme
+Q92496	non Enzyme
+Q6PKC3	non Enzyme
+P56715	non Enzyme
