@@ -1,4 +1,4 @@
-Protein UniProt Acc.	EC Number	True Labels
+Protein UniProt Acc.	EC Number	True Label
 P73599	5.3.1.5	5.1.3.-
 P76044	5.3.1.5	5.1.3.-
 Q46890	4.1.2.-	4.1.1.-
