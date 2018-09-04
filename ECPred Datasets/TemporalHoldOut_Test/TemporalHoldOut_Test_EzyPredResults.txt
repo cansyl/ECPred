@@ -1,0 +1,61 @@
+Protein UniProt Acc.	EC Prediction	True Label
+P73599	non Enzyme	5.1.3.-
+P76044	non Enzyme	5.1.3.-
+Q46890	4.1.-.-	4.1.1.-
+P39384	non Enzyme	4.-.-.-
+O27262	non Enzyme	3.5.1.-
+P36921	non Enzyme	3.-.-.-
+Q8BUH7	non Enzyme	2.3.2.27
+Q96PB1	non Enzyme	2.3.1.45
+Q55629	1.4.-.-	1.4.5.-
+P33642	non Enzyme	1.4.3.19
+Q5HQ05	non Enzyme	1.10.3.-
+Q7TN73	non Enzyme	2.3.1.45
+Q09272	2.8.-.-	2.8.2.5
+O28499	3.5.-.-	3.-.-.-
+O31775	non Enzyme	3.1.4.16
+B9DJR3	non Enzyme	4.2.1.-
+B2A1I5	non Enzyme	4.2.1.-
+P03813	non Enzyme	5.-.-.-
+Q8X840	non Enzyme	5.1.3.-
+Q4L5N8	non Enzyme	1.10.3.-
+Q9CCE3	non Enzyme	1.10.3.-
+Q8CSX5	non Enzyme	1.10.3.-
+Q46889	non Enzyme	2.7.1.-
+P44093	non Enzyme	2.7.1.-
+P9WLJ1	non Enzyme	3.1.-.-
+P47488	non Enzyme	3.1.-.-
+B1LSM6	non Enzyme	4.2.1.-
+C1B762	non Enzyme	4.2.1.-
+Q83JB2	non Enzyme	5.1.3.-
+P45541	non Enzyme	5.1.3.-
+Q9H160	2.1.-.-	non Enzyme
+Q12947	2.8.-.-	non Enzyme
+O00585	2.8.-.-	non Enzyme
+P46527	2.8.-.-	non Enzyme
+P17676	2.8.-.-	non Enzyme
+Q08379	non Enzyme	non Enzyme
+Q4V328	non Enzyme	non Enzyme
+P50552	3.4.-.-	non Enzyme
+Q8NEH6	non Enzyme	non Enzyme
+P09016	2.8.-.-	non Enzyme
+Q96BR5	non Enzyme	non Enzyme
+Q8WXC6	non Enzyme	non Enzyme
+Q96BW1	2.5.-.-	non Enzyme
+Q9H9G7	2.7.-.-	non Enzyme
+Q6UWU4	2.7.-.-	non Enzyme
+O60306	3.1.-.-	non Enzyme
+Q96BH3	3.4.-.-	non Enzyme
+Q9BTV4	non Enzyme	non Enzyme
+Q9H974	2.4.-.-	non Enzyme
+Q8WWQ2	2.8.-.-	non Enzyme
+O15226	2.8.-.-	non Enzyme
+Q9BU61	non Enzyme	non Enzyme
+P26992	3.1.-.-	non Enzyme
+P48544	2.8.-.-	non Enzyme
+P20674	1.9.-.-	non Enzyme
+P41091	non Enzyme	non Enzyme
+O15265	non Enzyme	non Enzyme
+Q92496	3.4.-.-	non Enzyme
+Q6PKC3	2.7.-.-	non Enzyme
+P56715	2.7.-.-	non Enzyme
