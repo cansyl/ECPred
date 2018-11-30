@@ -99,4 +99,4 @@ You should have received a copy of the GNU General Public License along with thi
 ## Citation
 If you find ECPred useful, please consider citing our publication:
 
-Dalkiran, A., Rifaioglu, A. S., Martin, M. J., Cetin-Atalay, R., Atalay, V., & Doğan, T. (2018). ECPred: a tool for the prediction of the enzymatic functions of protein sequences based on the EC nomenclature. * BMC bioinformatics, 19(1)*, 334. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2368-y
+Dalkiran, A., Rifaioglu, A. S., Martin, M. J., Cetin-Atalay, R., Atalay, V., & Doğan, T. (2018). ECPred: a tool for the prediction of the enzymatic functions of protein sequences based on the EC nomenclature. *BMC bioinformatics, 19(1)*, 334. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2368-y
