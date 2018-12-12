@@ -1,9 +1,7 @@
 
 
 <details> 
- <summary>
-  markdown: ECPred Version 1.0
- </summary>
+ <summary><strong>ECPred Version 1.0</strong></summary>
   
 
 
