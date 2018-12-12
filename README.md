@@ -1,12 +1,6 @@
-<details>
-<summary>
-
-# CLICK ME
-</summary>
-
-
 <details> 
  <summary>
+  
   ## ECPred Version 1.0 
  </summary>
   
