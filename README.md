@@ -1,9 +1,8 @@
-markdown: CommonMarkGhPages
+
 
 <details> 
  <summary>
-  
-  ## ECPred Version 1.0 
+  markdown: ECPred Version 1.0
  </summary>
   
 
