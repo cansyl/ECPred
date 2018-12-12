@@ -1,4 +1,4 @@
-## ECPred Version 1.0
+<details> ## ECPred Version 1.0 <details>
 
 ## Dependencies
 
