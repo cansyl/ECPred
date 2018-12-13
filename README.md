@@ -1,3 +1,5 @@
+[![Latest Github release](https://github.com/cansyl/ECPred/releases/tag/v1.0)](https://github.com/cansyl/ECPred/releases/tag/v1.0)
+
 
 ## ECPred Version 1.0
   
