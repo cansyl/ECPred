@@ -1,7 +1,5 @@
 
-
-<details> 
- <summary><strong>ECPred Version 1.0</strong></summary>
+## ECPred Version 1.0
   
 
 
