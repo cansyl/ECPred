@@ -1,4 +1,4 @@
-[![Latest Github release](https://img.shields.io/github/release/nextgenusfs/funannotate.svghttps://github.com/cansyl/ECPred/releases/tag/v1.0)](https://github.com/cansyl/ECPred/releases/tag/v1.0)
+[![Latest Github release](https://img.shields.io/github/release/nextgenusfs/funannotate.svg)](https://github.com/cansyl/ECPred/releases/latest)
 
 
 ## ECPred Version 1.0
