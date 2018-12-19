@@ -64,10 +64,10 @@ Run the following command on terminal to analyze the file "filename.fasta"  <br 
 ```
 java -jar ECPred.jar method inputFile libraryDir tempDir outputFile
 ```
-method argument can be one of the followings: blast, spmap, pepstats, weighted.
-inputFile argument is the file that contains that you want to predict.
-libraryDir argument is the directory where the "lib" folder is located.
-tempDir argument is the directory where the chunk files are located. You may delete the files under this directoy after a couple of runs.
+method argument can be one of the followings: blast, spmap, pepstats, weighted.<br />
+inputFile argument is the file that contains that you want to predict.<br />
+libraryDir argument is the directory where the "lib" folder is located.<br />
+tempDir argument is the directory where the chunk files are located. You may delete the files under this directoy after a couple of runs.<br />
 outputFile argument is optional. If you don't specify the output file name the results will be printed to standard output.
 
 
