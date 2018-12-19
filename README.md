@@ -1,6 +1,6 @@
-## ECPred Version 1.0
+## ECPred Version 1.1
  
- [![Latest Github release](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/cansyl/ECPred/releases/latest)
+ [![Latest Github release](https://img.shields.io/badge/version-1.1-blue.svg)](https://github.com/cansyl/ECPred/releases/latest)
 
 ## Dependencies
 
@@ -62,17 +62,15 @@ These bash scripts will install necessary libraries and tools.
 
 Run the following command on terminal to analyze the file "filename.fasta"  <br />
 ```
-java -jar ECPred.jar filename.fasta
+java -jar ECPred.jar method inputFile libraryDir tempDir outputFile
 ```
 ## Input
 
-ECPred accepts one input fasta file which may contain up to 20 proteins.
+There is no limit on the number of protein sequences, however, one protein is predicted in one minute on average on the i7-6820HQ processor.
 
 ## Output
 
-"predictionResults_filename_Date-Time.tsv": <br />
-
-A tsv file that contains the main, subfamily, sub-subfamily and substrate class predictions together with confidence scores for each prediction; alternatively, the output can be “non-enzyme” or “no prediction”.
+Output is optinal. If you don't specify the output file name the results will be printed to standard output.
 
 ## Data files
 
@@ -84,7 +82,7 @@ A text file containing the list of EC numbers that ECPred can predict.  <br />
 
 An example input fasta file.  <br />
 
-"predictionResults_sample_20180712-154729.tsv":  <br />
+"predictionResults.tsv":  <br />
 
 An example output prediction file (for sample.fasta).
 
