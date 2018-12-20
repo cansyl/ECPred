@@ -63,25 +63,25 @@ These bash scripts will install necessary libraries and tools.
 ```
 java -jar ECPred.jar method inputFile libraryDir tempDir outputFile
 ```
-method argument can be one of the followings: blast, spmap, pepstats, weighted.<br />
-inputFile argument is the file that contains that you want to predict.<br />
-libraryDir argument is the directory where the "lib" folder is located.<br />
-tempDir argument is the directory where the chunk files are located. You may delete the files under this directory after a couple of runs.<br />
-outputFile argument is optional. If you don't specify the output file name the results will be printed to standard output.
+```method ``` argument can be one of the following: blast, spmap, pepstats, weighted<br />
+```inputFile```  argument is the file that contains protein sequences in fasta format<br />
+```libraryDir``` is the path to the directory where the "lib" folder is located <br />
+```tempDir``` is the path to the directory where the temporary files are located. You may wish to delete these files after you complete your prediction runs. <br />
+```outputFile``` argument is optional. If you don't specify the output file name, the results will be printed to standard output. <br/>
 
 Sample run <br />
 ```
-java -jar ECPred.jar weighted test.fasta /Desktop/ECPred/ chunk/ results.tsv
+java -jar ECPred.jar weighted test.fasta /Desktop/ECPred/ temp/ results.tsv
 ```
 
 
 ## Input
 
-There is no limit on the number of protein sequences, however, one protein is predicted in one minute on average on the i7-6820HQ processor.
+There is no limit on the number of protein sequences; however, a single protein is predicted in one minute on average on an Intel 2.70 GHz i7 processor.
 
 ## Output
 
-Output is optinal. If you don't specify the output file name the results will be printed to standard output.
+Output is optinal. If you don't specify the output file name, the results will be printed to standard output.
 
 ## Data files
 
@@ -93,7 +93,7 @@ A text file containing the list of EC numbers that ECPred can predict.  <br />
 
 An example input fasta file.  <br />
 
-"predictionResults.tsv":  <br />
+"results.tsv":  <br />
 
 An example output prediction file (for sample.fasta).
 
