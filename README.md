@@ -60,7 +60,6 @@ These bash scripts will install necessary libraries and tools.
 
 ## Usage
 
-Run the following command on terminal to analyze the file "filename.fasta"  <br />
 ```
 java -jar ECPred.jar method inputFile libraryDir tempDir outputFile
 ```
@@ -69,6 +68,11 @@ inputFile argument is the file that contains that you want to predict.<br />
 libraryDir argument is the directory where the "lib" folder is located.<br />
 tempDir argument is the directory where the chunk files are located. You may delete the files under this directory after a couple of runs.<br />
 outputFile argument is optional. If you don't specify the output file name the results will be printed to standard output.
+
+Sample run <br />
+```
+java -jar ECPred.jar weighted test.fasta /Desktop/ECPred/ chunk/ results.tsv
+```
 
 
 ## Input
