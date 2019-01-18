@@ -15,7 +15,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.*/
 
 import java.io.BufferedReader;
-import static java.util.stream.Collectors.*;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -26,11 +25,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -41,7 +38,7 @@ import java.util.regex.Pattern;
 
 import javax.print.attribute.standard.Media;
 
-public class ECPpred {
+public class ECPred {
 
 	
 		
@@ -97,19 +94,20 @@ public class ECPpred {
 	      tempDir = args[3];
 	    }
 		String dateandtime = new SimpleDateFormat("yyyyMMdd-HHmmss").format(new Date());
+
 		
 		HashMap<String, String> protID = checkFasta(fastaFile);
 		List<String> idlist = createFasta(fastaFile);
 
-		HashMap<String, HashMap<String, Double>>  predictions = new HashMap<>();
+
+		HashMap<String, Vector<Vector<String>>> predictions = new HashMap<>();
 		System.out.println("Main classes of input proteins are being predicted ...");
 		
-		createFasta(idlist, fastaFile, "test.fasta", tempDir + File.separator + "testResult" + File.separator + time);
-	    String newfasta = tempDir + File.separator + "testResult" + File.separator + time + File.separator + "test.fasta";
-		predictions = runECobj.predictions(args, ROOTPATH, ecnums, time, predictions, idlist, newfasta, tempDir, method);
-	     for (Map.Entry<String, HashMap<String, Double>> entry : predictions.entrySet()) {
-	    	 
-	    	  if(entry.getValue().get("non")!= null || entry.getValue().get("nop")!=null)
+		createFasta(idlist, fastaFile, "test.fasta", tempDir+File.separator + "testResult" +File.separator + time);
+		String newfasta =  tempDir+File.separator + "testResult" +File.separator + time + File.separator + "test.fasta"; 
+		predictions = runECobj.predictions(args, ROOTPATH, ecnums, time, predictions, idlist, newfasta, tempDir, method);	
+	     for (Map.Entry<String, Vector<Vector<String>>> entry : predictions.entrySet()) {
+	    	  if(entry.getValue().get(0).get(0).equals("non") || entry.getValue().get(0).get(0).equals("nop"))
 	        		continue;
 	    	  if(protID.get(entry.getKey()).length()>81)
 	    		  System.out.println("Subclasses of "+protID.get(entry.getKey()).substring(1,81) + " are being predicted ...");
@@ -117,106 +115,110 @@ public class ECPpred {
     	    	  System.out.println("Subclasses of "+protID.get(entry.getKey()).substring(1,protID.get(entry.getKey()).length()) + " are being predicted ...");
 
 	    	  for(int i = 1 ; i<4; i++){
+		        		List<String> ecList = Files.readAllLines(Paths.get(ROOTPATH.substring(0, ROOTPATH.length()-3)+"/subclasses/"+ entry.getValue().get(i-1).get(0) + ".txt"));
+		        		if(ecList.size()==0){
+		        			Vector<String> preds = new Vector<>();
+		        			preds.add("nop");
+		    				preds.add("");
+		        			predictions.get(idlist.get(0)).add(preds);
+		        			break;
+		        		}
+
 		        		ecnums = new Vector<>() ;
-		        		BufferedReader br = new BufferedReader(new FileReader(ROOTPATH.substring(0, ROOTPATH.length() - 3) + "/subclasses/Level" + (i+1) + ".txt"));	
-		        		String line = br.readLine();
-		        		while (true) {
-		        			if(line==null)//for terminating
-		        				 break;
-		        			ecnums.add(line);
-		        			line = br.readLine();
-		        		}	 	
-		        		br.close();
+		        		ecnums.addAll(ecList);
 		        		idlist = new Vector<String>();
 		        		idlist.add(entry.getKey());
 		        		createFasta(idlist, fastaFile, "test.fasta", tempDir + File.separator + "testResult" + File.separator + time);
-		        		predictions = runECobj.predictions(args, ROOTPATH, ecnums, time, predictions, idlist, newfasta, tempDir, method);	        	
+		        		predictions = runECobj.predictions(args, ROOTPATH, ecnums, time, predictions, idlist, newfasta, tempDir, method);	
+		        	
+		        	 if(entry.getValue().get(i).get(0).equals("nop"))
+		        		break;
+		        	
 		        }
-	     }
-	     HashMap<String, Double> NHpredictions = new HashMap<>();
- 		
-	     if(output.equals("stdout")==false) {    	 
-			PrintWriter predFile = new PrintWriter(output, "UTF-8");
-			predFile.println("Protein ID\tEC Number\tConfidence Score(max 1.0)");
-			idlist = createFasta(fastaFile);
-			boolean flag = false;
-			  for (int a = 0 ; a < idlist.size(); a++ ) {
-				  for (Map.Entry<String, HashMap<String, Double>> entry : predictions.entrySet()) {
-					  if(idlist.get(a).equals(entry.getKey())==false)
+	    	 }
+	     if(output.equals("stdout")==false) {
+	    	 PrintWriter predFile = new PrintWriter(output, "UTF-8");
+				predFile.println("Protein ID\tEC Number\tConfidence Score(max 1.0)");
+				idlist = createFasta(fastaFile);
+				boolean flag = false;
+			      for (int a = 0 ; a < idlist.size(); a++ ) {
+			    	  for (Map.Entry<String, Vector<Vector<String>>> entry : predictions.entrySet()) {
+			    		  if(idlist.get(a).equals(entry.getKey())==false)
 			    			 continue;
-			    		  String prot_ID;
 			    		  if(protID.get(entry.getKey()).length()>81)
-			    			  prot_ID = protID.get(entry.getKey()).substring(1,81);
+			    			  predFile.print(protID.get(entry.getKey()).substring(1,81));
 			    		  else
-			    			  prot_ID = protID.get(entry.getKey()).substring(1,protID.get(entry.getKey()).length());
-				    	 
-			    	  if(entry.getValue().get("non")!= null ) {    			  
-			  predFile.println(prot_ID + "\tnon Enzyme\t"+(1.0-entry.getValue().get("non")));
-			    	  continue;					    	  					    	  
-			  }
-			  else if( entry.getValue().get("nop")!=null){
-			  predFile.println(prot_ID + "\tno Prediction");
-				  continue;
-			  }
-				  NHpredictions = new HashMap<>();
-			  NHpredictions = predictions.get(idlist.get(a));
-				Map<String, Double>  sorted = NHpredictions
-				        .entrySet()
-				        .stream()
-				        .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
-				        .collect(
-				            toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
-				                LinkedHashMap::new));
-			 
-			  
-			  for (Map.Entry<String,  Double> sortedEntry : sorted.entrySet()) {
-				  predFile.println(prot_ID + "\t" +sortedEntry.getKey() + "\t"  + sortedEntry.getValue());
-			        		}
+			    			  predFile.print(protID.get(entry.getKey()).substring(1,protID.get(entry.getKey()).length()));
+				    	  if(entry.getValue().get(0).get(0).equals("non")){
+					    	  predFile.println("\tnon Enzyme\t"+(1.0-Double.parseDouble(entry.getValue().get(0).get(1))));
+					    	  continue;
+				    	  }
+				    	  if(entry.getValue().get(0).get(0).equals("nop")){
+					    	  predFile.println("\tno Prediction");
+					    	  continue;
+				    	  }
+				    	  for(int i=0; i<4; i++){
+				    		  if(entry.getValue().get(i).get(0).equals("nop")){
+				    			  predFile.print("\t"+entry.getValue().get(i-1).get(0)+"\t"+entry.getValue().get(i-1).get(1));
+				    			  flag = true;
+						    	  break;
+				    		  }
+				    		  else
+				    			  continue;
+					    	 
+					    	  
+				    	  }
+				    	  if(flag == false)
+				    		  predFile.print("\t"+entry.getValue().get(3).get(0)+"\t"+entry.getValue().get(3).get(1));
+	  
+				    	  predFile.println();
+							
+							}
+			    	  flag = false;
 			      }	    
-			 
-			      }
-			      predFile.close();
-			 }
+		      predFile.close();
+	     }
 	     else {
 	    	 System.out.println("Protein ID\tEC Number\tConfidence Score(max 1.0)");
 				idlist = createFasta(fastaFile);
 				boolean flag = false;
 			      for (int a = 0 ; a < idlist.size(); a++ ) {
-			    	  for (Map.Entry<String, HashMap<String, Double>> entry : predictions.entrySet()) {
+			    	  for (Map.Entry<String, Vector<Vector<String>>> entry : predictions.entrySet()) {
 			    		  if(idlist.get(a).equals(entry.getKey())==false)
 			    			 continue;
-			    		  String prot_ID;
 			    		  if(protID.get(entry.getKey()).length()>81)
-			    			  prot_ID = protID.get(entry.getKey()).substring(1,81);
+			    			  System.out.print(protID.get(entry.getKey()).substring(1,81)+"\t");
 			    		  else
-			    			  prot_ID = protID.get(entry.getKey()).substring(1,protID.get(entry.getKey()).length());
-				    	 
-			    		  if(entry.getValue().get("non")!= null ) {    			  
-					    		  System.out.println(prot_ID + "\tnon Enzyme\t"+(1.0-entry.getValue().get("non")));
-						    	  continue;					    	  					    	  
-				    	  }
-			    		  else if( entry.getValue().get("nop")!=null){
-				    		  System.out.println(prot_ID + "\tno Prediction");
+			    			  System.out.print(protID.get(entry.getKey()).substring(1,protID.get(entry.getKey()).length())+"\t");
+				    	  if(entry.getValue().get(0).get(0).equals("non")){
+				    		  System.out.println("non Enzyme\t"+(1.0-Double.parseDouble(entry.getValue().get(0).get(1))));
 					    	  continue;
 				    	  }
-			    		  NHpredictions = new HashMap<>();
-			    		  NHpredictions = predictions.get(idlist.get(a));
-			    	 		Map<String, Double>  sorted = NHpredictions
-			    	 		        .entrySet()
-			    	 		        .stream()
-			    	 		        .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
-			    	 		        .collect(
-			    	 		            toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2,
-			    	 		                LinkedHashMap::new));
-				    	  for (Map.Entry<String,  Double> sortedEntry : sorted.entrySet()) {
-				    		  System.out.println(prot_ID + "\t" + sortedEntry.getKey() + "\t"  + sortedEntry.getValue());
-			        		}
-				    	  
+				    	  if(entry.getValue().get(0).get(0).equals("nop")){
+				    		  System.out.println("no Prediction");
+					    	  continue;
+				    	  }
+				    	  for(int i=0; i<4; i++){
+				    		  if(entry.getValue().get(i).get(0).equals("nop")){
+				    			  System.out.print(entry.getValue().get(i-1).get(0)+"\t"+entry.getValue().get(i-1).get(1));
+				    			  flag = true;
+						    	  break;
+				    		  }
+				    		  else
+				    			  continue;
+					    	 
+					    	  
+				    	  }
+				    	  if(flag == false)
+				    		  System.out.print(entry.getValue().get(3).get(0)+"\t"+entry.getValue().get(3).get(1));
+	  
+				    	  	System.out.println();
+							}
+			    	  flag = false;
 			      }	    
 	     }
-	     }
-	      
-		 
+			
+	    		 
 			   Date d2 = new Date();
 				long diff = d2.getTime() - d1.getTime();
 				long diffSeconds = diff / 1000 % 60;
@@ -354,8 +356,6 @@ public class ECPpred {
 		 if(lst_training_ids.contains(prot_id)){ 
 			line = br.readLine();
 		    while(line.startsWith(">")==false){//until > add sequence 
-		    	 line = line.replaceAll("\\s+","");
-
 		    	 fastaString+=line;
 				line = br.readLine();
 				if(line==null)
