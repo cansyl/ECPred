@@ -71,7 +71,7 @@ java -jar ECPred.jar method inputFile libraryDir tempDir outputFile
 
 Sample run <br />
 ```
-java -jar ECPred.jar weighted test.fasta /Desktop/ECPred/ temp/ results.tsv
+java -jar ECPred.jar weighted sample.fasta /Desktop/ECPred/ temp/ results.tsv
 ```
 
 
