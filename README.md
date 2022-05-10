@@ -77,7 +77,7 @@ java -jar ECPred.jar weighted sample.fasta /full/path/to/ECPred/ temp/ results.t
 ```
 You can use the following command to run ECPred (assuming ECPred is extracted on the desktop)
 ```
-java -jar ~/Desktop/ECPred/ECPred.jar weighted sample.fasta ~/Desktop/ECPred/ temp/ results.tsv
+java -jar ECPred.jar weighted sample.fasta ~/Desktop/ECPred/ temp/ results.tsv
 ```
 
 ## Input
