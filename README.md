@@ -75,7 +75,9 @@ Sample run <br />
 ```
 java -jar ECPred.jar weighted sample.fasta /full/path/to/ECPred/ temp/ results.tsv
 ```
-
+```
+java -jar ~/Desktop/ECPred/ECPred.jar weighted sample.fasta ~/Desktop/ECPred/ temp/ results.tsv
+```
 
 ## Input
 
